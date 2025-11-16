@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>	
-	<title>Gitugu VTC</title>
-	<meta name="description" content="Hello there, this is Gitugu Vocational Training Centre"/>
-	<meta charset="utf-8"/>
-	<meta name="keywords" content="gituguVTC, gitugu VTC, gitugu, gitugu vocational training centre"/>
-	<meta name="author" content="gituguVTC"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-	<meta name="twitter:site" content="@gituguVTC.github.io"/>
-	<meta name="twitter:creator" content="@gitugutvc"/>
-	<meta property="og:url" content="https://gituguvtc.github.io"/>
-	<link rel="icon" type="image/png" href="img/general/logo.png" sizes="16x16">
-	<meta property="og:type" content="article"/>
-	<meta property="og:title" content="Gitugu VTC"/>
-	<meta name="description" content="HTML,CSS,JAVASCRIPT">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mivek Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer>
+    // Simple scroll-to-section navigation
+    function navigateTo(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-red-600">Mivek Solutions</h1>
+      <nav class="space-x-4">
+        <button onclick="navigateTo('home')" class="hover:text-red-500">Home</button>
+        <button onclick="navigateTo('about')" class="hover:text-red-500">About</button>
+        <button onclick="navigateTo('services')" class="hover:text-red-500">Services</button>
+        <button onclick="navigateTo('contact')" class="hover:text-red-500">Contact</button>
+      </nav>
+    </div>
+  </header>
 
-<body>
-	<center>
-		<div class="cool-menu">
-			<ul>
-				<a href="index.html">About Us</a>
-				<a href="staff.html">Our Staff</a>
-				<a href="courses.html">Courses</a>
-				<a href="contact.html">Contact Us</a>
-			</ul>
-		</div>
-		<div>
-			<img src="img/general/logo.png" class="passport" alt="cool passport">
-		</div>
-		<div>
-			<li></li><i>Motto : Technical knowledge is power.</i></li>
-			<li></li><i>Mission : To empower youth with appropriate technical skills, knowledge and attitude to realise full potential for individual and national development.</i></li>
-			<li></li><i>Vision : To be a centre of excellence in provision of technical, vocational, entrepreneurial and life skills to the youth in Kenya.</i></li>
-		</div><hr>
-		<div class="row">
-			<b>History & Background</b>
-			<p>Gitugu Vocational Training Centre started in 2006.</p>
-		</div><hr>
-        <div>
-			<a href="https://www.twitter.com/gituguvtc/" target="_blank" title="twitter"><img src="img/social/twitter.png"></a>
-			<a href="https://www.facebook.com/gituguvtc/" target="_blank" title="facebook"><img src="img/social/facebook.png"></a>
-			<a href="https://www.linkedin.com/in/gituguvtc/" target="_blank" title="linkedIn"><img src="img/social/linkedin.png"></a>
-			<a href="https://www.instagram.com/gituguvtc/" target="_blank" title="instagram"><img src="img/social/instagram.png"></a>
-		</div>
-		<br>
-		<div>
-			&copy 2006- &nbsp Gitugu VTC. All rights reserved.
-		</div>
-	</center>
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-red-600 to-green-600 text-white text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Mivek Solutions</h2>
+    <p class="text-lg md:text-xl max-w-2xl">Your trusted partner in IT Support, Consulting, Stationery, and Printing Services.</p>
+    <button onclick="navigateTo('services')" class="mt-6 bg-white text-red-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">Explore Services</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-6">About Us</h3>
+    <p class="text-center max-w-3xl mx-auto text-lg">
+      At Mivek Solutions, we provide reliable IT support, expert consulting, and high-quality stationery & printing services.
+      With years of experience, we are committed to helping businesses and individuals achieve seamless operations.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-100 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8 container mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2 text-red-600">IT Support & Consulting</h4>
+        <p>Hardware/software setup, troubleshooting, and user training for smooth IT operations.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2 text-green-600">Stationery</h4>
+        <p>Supplying quality office and school stationery to keep you productive and organized.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2 text-black">Printing</h4>
+        <p>High-quality printing services tailored to your business and personal needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-6">Contact Us</h3>
+    <div class="max-w-xl mx-auto bg-white shadow p-8 rounded-2xl">
+      <p class="mb-4">📍 P.O Box 833-60200, Njuri Ncheke Street, Meru, Kenya</p>
+      <p class="mb-4">📞 0704 331 939</p>
+      <p class="mb-4">📧 miveksolutions@gmail.com</p>
+      <p class="mb-4">🌐 <a href="http://miveksolutions.com" class="text-red-600 hover:underline">miveksolutions.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>© <span id="year"></span> Mivek Solutions. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
